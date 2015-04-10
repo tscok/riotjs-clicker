@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RiotJS-Clicker</title>
+</head>
+<body>
+
+	<h1>RiotJS Clicker <badge></badge></h1>
+
+	<p>The <click></click> button has been clicked <badge></badge> time(s)</p>
+
+	<script src="click.tag" type="riot/tag"></script>
+	<script src="badge.tag" type="riot/tag"></script>
+	<script src="https://cdn.jsdelivr.net/g/riot@2.0(riot.min.js+compiler.min.js)"></script>
+	<script src="riotcontrol.js"></script>
+	<script src="clickStore.js"></script>
+	<script>
+		var clickStore = new clickStore();
+		RiotControl.addStore(clickStore);
+
+		riot.mount('*');
+	</script>
+</body>
+</html>
